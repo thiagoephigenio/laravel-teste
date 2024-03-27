@@ -1,0 +1,46 @@
+.title {
+  color: red;
+}
+
+.drop-menu {
+  position: relative;
+  .drop-down {
+    margin-top: 3px;
+    background-color: rgb(243, 255, 255);
+    position: absolute;
+    display: flex;
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .right-side {
+    width: 200px;
+  }
+}
+.drop-menu.mobile {
+  .drop-down {
+    position: fixed;
+    background: red;
+    margin: 0;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    @media(width <= 300px) {
+      width: 100vw;
+    }
+  }
+  .left-side {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    button {
+      width: 100%;
+    }
+  }
+  .right-side {
+    width: 300px;
+  }
+}
