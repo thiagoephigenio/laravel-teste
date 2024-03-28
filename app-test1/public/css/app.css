@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  width: 100vw;
+}
+
 .title {
   color: red;
 }
@@ -44,3 +49,57 @@
     width: 300px;
   }
 }
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 24px;
+  box-sizing: border-box;
+  @media(width <= 414px) {
+    flex-direction: column;
+  }
+  .div-flex {
+    display: flex;
+  }
+}
+.flex-group {
+  display: flex;
+  gap: 8px;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  @media(width > 414px) {
+    flex-basis: 308px;
+  }
+}
+@media(width > 414px) {
+  .flex1 {
+    background-color: aqua;
+    flex-basis: 150px;
+  }
+  .flex2 {
+    background-color: red;
+    flex-grow: 1;
+    flex-basis: 200px;
+    max-width: 350px;
+  }
+  .flex3 {
+    background-color: yellow;
+    flex-basis: 150px;
+  }
+  .flex4 {
+    background-color: yellowgreen;
+    flex-basis: 150px;
+    flex-grow: 1;
+  }
+}
+.flex5 {
+  background-color: brown;
+  flex: 1;
+}
+.flex6 {
+  background-color: pink;
+  flex: 1;
+}
+

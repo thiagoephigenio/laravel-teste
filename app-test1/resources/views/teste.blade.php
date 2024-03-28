@@ -23,4 +23,14 @@
             </div>
         </div>
     </div>
+    <div class="flex-container">
+        <div class="div-flex flex1">flex1</div>
+        <div class="div-flex flex2">flex2</div>
+        <div class="div-flex flex3">flex3</div>
+        <div class="div-flex flex4">flex4</div>
+        <div class="flex-group">
+            <div class="div-flex flex5">flex5</div>
+            <div class="div-flex flex6">flex6</div>
+        </div>
+    </div>
 </div>
